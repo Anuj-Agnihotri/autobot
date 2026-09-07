@@ -1,0 +1,12 @@
+:root { color: #18201c; background: #f7f7f2; font-family: Arial, Helvetica, sans-serif; }
+* { box-sizing: border-box; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: radial-gradient(circle at 50% -20%, #e5f0dc 0, transparent 42rem), #f7f7f2; }
+.page-shell { width: min(100% - 40px, 1030px); margin: 0 auto; padding: clamp(56px, 11vw, 120px) 0 36px; }
+.intro { max-width: 620px; margin-bottom: 48px; }.eyebrow, .provider-label { margin: 0; color: #687369; font-family: monospace; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+h1 { margin: 12px 0 10px; font-size: clamp(3.4rem, 10vw, 6.5rem); line-height: .95; letter-spacing: -.075em; }.lede { margin: 0; color: #506056; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.6; }
+.porto-status { display: inline-block; margin: 22px 0 0; padding: 8px 12px; border: 1px solid rgba(24, 32, 28, .12); border-radius: 99px; color: #506056; font: .78rem monospace; }.porto-status span { color: #2a8a4a; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }.provider-card { padding: clamp(24px, 4vw, 36px); border: 1px solid rgba(24, 32, 28, .1); border-radius: 22px; box-shadow: 0 16px 45px rgba(31, 48, 35, .07); }.chatgpt { background: #e4efdf; }.claude { background: #f4e4d7; }
+.provider-heading { display: flex; align-items: flex-start; justify-content: space-between; }h2 { margin: 5px 0 28px; font-size: 2rem; letter-spacing: -.06em; }.mark { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid rgba(24, 32, 28, .15); border-radius: 50%; font-size: 1.35rem; }
+.plan-list { padding: 0; margin: 0 0 25px; list-style: none; }.plan-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(24, 32, 28, .12); font-size: .9rem; }.plan-list strong { white-space: nowrap; font-family: monospace; font-size: .82rem; }small { color: #647067; font-size: .7em; font-weight: 400; }
+a { color: inherit; font-size: .84rem; font-weight: 700; text-underline-offset: 4px; }footer { margin-top: 28px; color: #687369; font-size: .75rem; line-height: 1.5; }
+@media (max-width: 700px) { .pricing-grid { grid-template-columns: 1fr; }.intro { margin-bottom: 32px; } }

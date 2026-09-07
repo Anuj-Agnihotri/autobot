@@ -1,5 +1,16 @@
 # AI plan price snapshot
 
-A dependency-free static page that says hello and compares published USD plan prices for ChatGPT and Claude.
+A Next.js app that shows a hello message, ChatGPT and Claude USD plan prices, and a Hello Porto health endpoint.
 
-Open `index.html` in a browser or deploy the repository to Vercel. Prices and links are visible on the page.
+## Run locally
+
+Install dependencies, then start the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+The price page is available at `/`; the Hello Porto API response is at `/api/hello-porto`.
+
+The `hello-porto` directory remains in this repository as the original standalone Node service source.
