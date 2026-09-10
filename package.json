@@ -6,10 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf-typegen": "wrangler types"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "latest",
@@ -17,7 +14,6 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "latest",
-    "wrangler": "latest"
+    "@netlify/plugin-nextjs": "^5.15.13"
   }
 }
