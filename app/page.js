@@ -28,6 +28,30 @@ const providers = [
       ['Enterprise', 'Custom', 'pricing'],
     ],
   },
+  {
+    name: 'Gemini',
+    company: 'Google',
+    symbol: '✳',
+    className: 'gemini',
+    source: 'https://gemini.google.com/u/0/faq#subscription',
+    plans: [
+      ['Free', '$0', '/ month'], ['AI Plus', '$7.99', '/ month'], ['AI Pro', '$19.99', '/ month'],
+      ['AI Ultra', '$99.99', '/ month'], ['AI Ultra 2×', '$200', '/ month'],
+      ['Enterprise', '$21', '/ user / month'],
+    ],
+  },
+  {
+    name: 'Cursor',
+    company: 'Anysphere',
+    symbol: '⌥',
+    className: 'cursor',
+    source: 'https://www.cursor.com/pricing',
+    plans: [
+      ['Hobby', '$0', '/ month'], ['Pro', '$20', '/ month'], ['Pro+', '$60', '/ month'],
+      ['Ultra', '$200', '/ month'], ['Teams', '$40', '/ user / month'],
+      ['Teams Premium', '$120', '/ user / month'], ['Enterprise', 'Custom', 'pricing'],
+    ],
+  },
 ]
 
 export default function Home() {
@@ -45,7 +69,7 @@ export default function Home() {
       <section className="intro" aria-labelledby="page-title">
         <p className="eyebrow">AI subscription guide</p>
         <h1 id="page-title">Hello, world.</h1>
-        <p className="lede">A simple USD snapshot of ChatGPT and Claude plans.</p>
+        <p className="lede">A simple USD snapshot of ChatGPT, Claude, Gemini, and Cursor plans.</p>
         <p className="porto-status"><span aria-hidden="true">●</span> {portoStatus}</p>
       </section>
 
